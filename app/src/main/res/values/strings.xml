@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Taller1Layouts</string>
+
+    <string-array name="continentes">
+        <item>Africa</item>
+        <item>Americas</item>
+        <item>Asia</item>
+        <item>Europa</item>
+        <item>Oceania</item>
+    </string-array>
+</resources>

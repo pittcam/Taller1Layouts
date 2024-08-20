@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/txtSeleccion"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:text="Select a region:"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/black"
+        app:title="The Countries App" />
+
+    <Spinner
+        android:id="@+id/spinnerRegion"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtSeleccion"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/continentes" />
+
+    <Button
+        android:id="@+id/btnListCountries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerRegion"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/blue"
+        android:text="List the countries" />
+</RelativeLayout>
