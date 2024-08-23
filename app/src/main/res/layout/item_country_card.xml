@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Imagen de la bandera -->
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true" />
+
+        <!-- Nombre del país -->
+        <TextView
+            android:id="@+id/tv_country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_flag"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Country Name" />
+
+        <!-- Nombre nativo del país -->
+        <TextView
+            android:id="@+id/tv_native_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_country_name"
+            android:textSize="14sp"
+            android:text="Native Name"
+            android:layout_marginTop="4dp" />
+
+        <!-- Código de 3 letras -->
+        <TextView
+            android:id="@+id/tv_alpha3_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_native_name"
+            android:textSize="14sp"
+            android:text="Alpha3 Code"
+            android:layout_marginTop="4dp" />
+
+        <!-- Nombre y símbolo de la moneda -->
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alpha3_code"
+            android:textSize="14sp"
+            android:text="Currency Name (Symbol)"
+            android:layout_marginTop="4dp" />
+
+        <!-- Botón flotante de llamada -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:src="@android:drawable/ic_menu_call"
+            app:fabSize="mini"
+            app:elevation="8dp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,4 +1,4 @@
-package com.example.taller1layouts.modelo
+package com.example.taller1layouts.datos
 
 data class Country(
     val name: String,
