@@ -16,7 +16,7 @@ class Funciones {
             if (jsonString != null) {
                 try {
                     val json = JSONObject(jsonString)
-                    val paisesJson = json.getJSONArray("paises")
+                    val paisesJson = json.getJSONArray("Countries")
 
                     // Limpia la lista antes de llenarla, por si ya tiene datos
                     Data.COUNTRY_LIST.clear()

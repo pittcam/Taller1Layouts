@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Taller1Layouts"
         tools:targetApi="31">
+
+        <activity android:name=".logica.CountryList" />
+
         <activity
             android:name=".logica.MainActivity"
             android:exported="true">

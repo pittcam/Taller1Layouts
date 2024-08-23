@@ -29,10 +29,11 @@
 
     <Spinner
         android:id="@+id/spinnerRegion"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_width="335dp"
+        android:layout_height="68dp"
         android:layout_below="@+id/txtSeleccion"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="-5dp"
         android:entries="@array/continentes" />
 
     <Button
