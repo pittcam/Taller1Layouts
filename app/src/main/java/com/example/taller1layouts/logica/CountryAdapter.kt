@@ -53,6 +53,15 @@ class CountryAdapter(private val countries: List<Country>) : BaseAdapter() {
             parent?.context?.startActivity(intent)
         }
 
+        // Configurar el click en toda la vista para abrir la nueva actividad
+        view.setOnClickListener {
+            val context = view.context // Obtener el contexto desde la vista
+            val intent = Intent(context, CountryDetails::class.java)
+            intent.putExtra("country", country)
+            context.startActivity(intent)
+        }
+
+
         return view
     }
 }

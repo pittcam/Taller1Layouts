@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
+
         <!-- Imagen de la bandera -->
         <ImageView
             android:id="@+id/iv_flag"

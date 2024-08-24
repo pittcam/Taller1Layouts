@@ -1,5 +1,7 @@
 package com.example.taller1layouts.datos
 
+import java.io.Serializable
+
 data class Country(
     val name: String,
     val alpha2Code: String,
@@ -17,4 +19,4 @@ data class Country(
     val currencySymbol: String,
     val flag: String,
     val flagPng: String
-)
+) : Serializable
