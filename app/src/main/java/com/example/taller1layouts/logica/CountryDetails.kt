@@ -28,6 +28,8 @@ class CountryDetails : AppCompatActivity() {
         val AreaDetail = findViewById<TextView>(R.id.area_detail)
         val NumericCodeDetail = findViewById<TextView>(R.id.numeric_code_detail)
         val NativeLanguageDetail = findViewById<TextView>(R.id.native_language_detail)
+        val LatitudeDetail = findViewById<TextView>(R.id.latitude_detail)
+        val LongitudeDetail = findViewById<TextView>(R.id.longitude_detail)
 
         // Obtener el objeto Country de la intención
         val country = intent.getSerializableExtra("country") as Country
@@ -45,6 +47,9 @@ class CountryDetails : AppCompatActivity() {
         AreaDetail.text = "Area: ${country.area} km²"
         NumericCodeDetail.text = "Numeric Code: ${country.numericCode}"
         NativeLanguageDetail.text = "Language: ${country.nativeLanguage}"
+        LatitudeDetail.text = "Latitud: ${country.latitude}"
+        LongitudeDetail.text = "Longitud: ${country.longitude}"
+
     }
 
 }

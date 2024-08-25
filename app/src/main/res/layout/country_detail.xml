@@ -50,6 +50,22 @@
         android:layout_marginTop="8dp" />
 
     <TextView
+        android:id="@+id/latitude_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/longitude_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+
+
+    <TextView
         android:id="@+id/area_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
