@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Taller1Layouts</string>
+    <string name="app_name">The Countries APP</string>
 
     <string-array name="continentes">
         <item>Africa</item>

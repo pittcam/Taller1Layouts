@@ -3,8 +3,6 @@ package com.example.taller1layouts.logica
 import android.os.Bundle
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.taller1layouts.R
 import com.example.taller1layouts.datos.Country
 import com.example.taller1layouts.datos.Data

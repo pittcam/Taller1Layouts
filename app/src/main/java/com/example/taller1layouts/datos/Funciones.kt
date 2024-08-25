@@ -1,7 +1,11 @@
 package com.example.taller1layouts.datos
 
 import android.content.Context
+import android.graphics.drawable.PictureDrawable
 import android.util.Log
+import android.widget.ImageView
+import com.bumptech.glide.RequestBuilder
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.IOException
@@ -67,11 +71,6 @@ class Funciones {
             }
         }
 
-
-
     }
 
-   
-
-       
 }

@@ -1,10 +1,14 @@
 package com.example.taller1layouts.logica
 
+import android.graphics.drawable.PictureDrawable
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.bumptech.glide.RequestBuilder
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
+import com.bumptech.glide.request.RequestOptions
 import com.example.taller1layouts.R
 import com.example.taller1layouts.datos.Country
 
@@ -28,9 +32,9 @@ class CountryDetails : AppCompatActivity() {
         // Obtener el objeto Country de la intención
         val country = intent.getSerializableExtra("country") as Country
 
-        // Mostrar los detalles del país
+        // Cargar la imagen de la bandera usando Glide con el contexto de la actividad
         Glide.with(this)
-            .load(country.flag)
+            .load(country.flagPng)
             .into(FlagDetail)
 
         CountryNameDetail.text = country.name
